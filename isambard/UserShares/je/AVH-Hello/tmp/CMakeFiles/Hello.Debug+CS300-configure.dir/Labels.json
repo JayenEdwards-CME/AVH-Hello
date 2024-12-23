@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/CMakeFiles/Hello.Debug+CS300-configure"
+		},
+		{
+			"file" : "H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/CMakeFiles/Hello.Debug+CS300-configure.rule"
+		},
+		{
+			"file" : "H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-configure.rule"
+		},
+		{
+			"file" : "H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-patch.rule"
+		},
+		{
+			"file" : "H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-update.rule"
+		},
+		{
+			"file" : "H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-download.rule"
+		},
+		{
+			"file" : "H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Hello.Debug+CS300"
+		],
+		"name" : "Hello.Debug+CS300-configure"
+	}
+}

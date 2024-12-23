@@ -1,0 +1,22 @@
+# ninja log v6
+44	175	7566615289741774	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-mkdir	f39765fa7d8f2924
+44	175	7566615289741774	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-mkdir	f39765fa7d8f2924
+178	295	7566615290948513	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-download	31f75f868f91d58d
+178	295	7566615290948513	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-download	31f75f868f91d58d
+297	416	7566615292154733	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-update	dbec5a3bffbd0e0b
+297	416	7566615292154733	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-update	dbec5a3bffbd0e0b
+455	628	7566615294224027	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-patch	285506950a2da40b
+455	628	7566615294224027	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-patch	285506950a2da40b
+629	10105	7566615389038845	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-configure	d03eb40688ff59c6
+629	10105	7566615389038845	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-configure	d03eb40688ff59c6
+10106	13829	7566615389139200	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-build	c9ea9a7836a38e10
+10106	13829	7566615389139200	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/out/Hello/CS300/Debug/AC6/Hello.axf	c9ea9a7836a38e10
+10106	13829	7566615389139200	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-build	c9ea9a7836a38e10
+13832	13908	7566615426352915	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-install	ed0b3e1c39aee7ce
+13832	13908	7566615426352915	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-install	ed0b3e1c39aee7ce
+13909	14061	7566615428567593	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-test	f2d3a198a5be33b5
+13909	14061	7566615428567593	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-test	f2d3a198a5be33b5
+14063	14247	7566615430478422	CMakeFiles/Hello.Debug+CS300-complete	4bfbe4c95437c4f2
+14063	14247	7566615430478422	Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-done	4bfbe4c95437c4f2
+14063	14247	7566615430478422	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/CMakeFiles/Hello.Debug+CS300-complete	4bfbe4c95437c4f2
+14063	14247	7566615430478422	H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/Hello.Debug+CS300/src/Hello.Debug+CS300-stamp/Hello.Debug+CS300-done	4bfbe4c95437c4f2

@@ -1,0 +1,11 @@
+-- The C compiler identification is ARMClang 6.22.0
+-- The ASM compiler identification is ARMClang
+-- Found assembler: D:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (7.2s)
+-- Generating done (1.9s)
+-- Build files have been written to: H:/AVH-Hello/isambard/UserShares/je/AVH-Hello/tmp/1

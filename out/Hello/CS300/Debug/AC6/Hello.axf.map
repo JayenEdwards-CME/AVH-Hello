@@ -1,0 +1,766 @@
+Component: Arm Compiler for Embedded 6.22 Tool: armlink [5ee90200]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x10002f15
+
+  Load Region LR_ROM0 (Base: 0x10000000, Size: 0x00007c40, Max: 0x00200000, ABSOLUTE)
+
+    Execution Region RW_RAM1 (Base: 0x00000000, Size: 0x00000000, Max: 0x00080000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region RW_RAM2 (Base: 0x01000000, Size: 0x00000000, Max: 0x00100000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ER_ROM0 (Base: 0x10000000, Size: 0x00007b48, Max: 0x00200000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000000   0x0000024c   Data   RO         1970    RESET               startup_SSE300MPS3.o
+    0x1000024c   0x00000008   Code   RO         2002  * !!!main             c_wu.l(__main.o)
+    0x10000254   0x0000005c   Code   RO         2527    !!!scatter          c_wu.l(__scatter.o)
+    0x100002b0   0x0000001a   Code   RO         2531    !!handler_copy      c_wu.l(__scatter_copy.o)
+    0x100002ca   0x00000002   PAD
+    0x100002cc   0x00000002   Code   RO         2528    !!handler_null      c_wu.l(__scatter.o)
+    0x100002ce   0x00000002   PAD
+    0x100002d0   0x0000001c   Code   RO         2533    !!handler_zi        c_wu.l(__scatter_zi.o)
+    0x100002ec   0x00000000   Code   RO         2087    .ARM.Collect$$_printf_percent$$00000000  c_wu.l(_printf_percent.o)
+    0x100002ec   0x00000006   Code   RO         2076    .ARM.Collect$$_printf_percent$$00000001  c_wu.l(_printf_n.o)
+    0x100002f2   0x00000006   Code   RO         2078    .ARM.Collect$$_printf_percent$$00000002  c_wu.l(_printf_p.o)
+    0x100002f8   0x00000006   Code   RO         2083    .ARM.Collect$$_printf_percent$$00000003  c_wu.l(_printf_f.o)
+    0x100002fe   0x00000006   Code   RO         2084    .ARM.Collect$$_printf_percent$$00000004  c_wu.l(_printf_e.o)
+    0x10000304   0x00000006   Code   RO         2085    .ARM.Collect$$_printf_percent$$00000005  c_wu.l(_printf_g.o)
+    0x1000030a   0x00000006   Code   RO         2086    .ARM.Collect$$_printf_percent$$00000006  c_wu.l(_printf_a.o)
+    0x10000310   0x0000000a   Code   RO         2091    .ARM.Collect$$_printf_percent$$00000007  c_wu.l(_printf_ll.o)
+    0x1000031a   0x00000006   Code   RO         2080    .ARM.Collect$$_printf_percent$$00000008  c_wu.l(_printf_i.o)
+    0x10000320   0x00000006   Code   RO         2081    .ARM.Collect$$_printf_percent$$00000009  c_wu.l(_printf_d.o)
+    0x10000326   0x00000006   Code   RO         2082    .ARM.Collect$$_printf_percent$$0000000A  c_wu.l(_printf_u.o)
+    0x1000032c   0x00000006   Code   RO         2079    .ARM.Collect$$_printf_percent$$0000000B  c_wu.l(_printf_o.o)
+    0x10000332   0x00000006   Code   RO         2077    .ARM.Collect$$_printf_percent$$0000000C  c_wu.l(_printf_x.o)
+    0x10000338   0x00000006   Code   RO         2088    .ARM.Collect$$_printf_percent$$0000000D  c_wu.l(_printf_lli.o)
+    0x1000033e   0x00000006   Code   RO         2089    .ARM.Collect$$_printf_percent$$0000000E  c_wu.l(_printf_lld.o)
+    0x10000344   0x00000006   Code   RO         2090    .ARM.Collect$$_printf_percent$$0000000F  c_wu.l(_printf_llu.o)
+    0x1000034a   0x00000006   Code   RO         2095    .ARM.Collect$$_printf_percent$$00000010  c_wu.l(_printf_llo.o)
+    0x10000350   0x00000006   Code   RO         2096    .ARM.Collect$$_printf_percent$$00000011  c_wu.l(_printf_llx.o)
+    0x10000356   0x0000000a   Code   RO         2092    .ARM.Collect$$_printf_percent$$00000012  c_wu.l(_printf_l.o)
+    0x10000360   0x00000006   Code   RO         2074    .ARM.Collect$$_printf_percent$$00000013  c_wu.l(_printf_c.o)
+    0x10000366   0x00000006   Code   RO         2075    .ARM.Collect$$_printf_percent$$00000014  c_wu.l(_printf_s.o)
+    0x1000036c   0x00000006   Code   RO         2093    .ARM.Collect$$_printf_percent$$00000015  c_wu.l(_printf_lc.o)
+    0x10000372   0x00000006   Code   RO         2094    .ARM.Collect$$_printf_percent$$00000016  c_wu.l(_printf_ls.o)
+    0x10000378   0x00000004   Code   RO         2150    .ARM.Collect$$_printf_percent$$00000017  c_wu.l(_printf_percent_end.o)
+    0x1000037c   0x00000002   Code   RO         2290    .ARM.Collect$$libinit$$00000000  c_wu.l(libinit.o)
+    0x1000037e   0x00000004   Code   RO         2291    .ARM.Collect$$libinit$$00000001  c_wu.l(libinit2.o)
+    0x10000382   0x00000000   Code   RO         2294    .ARM.Collect$$libinit$$00000004  c_wu.l(libinit2.o)
+    0x10000382   0x00000000   Code   RO         2296    .ARM.Collect$$libinit$$00000006  c_wu.l(libinit2.o)
+    0x10000382   0x00000008   Code   RO         2422    .ARM.Collect$$libinit$$0000000A  c_wu.l(libinit5.o)
+    0x1000038a   0x00000000   Code   RO         2299    .ARM.Collect$$libinit$$0000000C  c_wu.l(libinit2.o)
+    0x1000038a   0x00000000   Code   RO         2301    .ARM.Collect$$libinit$$0000000E  c_wu.l(libinit2.o)
+    0x1000038a   0x00000000   Code   RO         2303    .ARM.Collect$$libinit$$00000010  c_wu.l(libinit2.o)
+    0x1000038a   0x00000006   Code   RO         2304    .ARM.Collect$$libinit$$00000011  c_wu.l(libinit2.o)
+    0x10000390   0x00000000   Code   RO         2306    .ARM.Collect$$libinit$$00000013  c_wu.l(libinit2.o)
+    0x10000390   0x0000000c   Code   RO         2307    .ARM.Collect$$libinit$$00000014  c_wu.l(libinit2.o)
+    0x1000039c   0x00000000   Code   RO         2308    .ARM.Collect$$libinit$$00000015  c_wu.l(libinit2.o)
+    0x1000039c   0x00000000   Code   RO         2310    .ARM.Collect$$libinit$$00000017  c_wu.l(libinit2.o)
+    0x1000039c   0x0000000a   Code   RO         2311    .ARM.Collect$$libinit$$00000018  c_wu.l(libinit2.o)
+    0x100003a6   0x00000000   Code   RO         2312    .ARM.Collect$$libinit$$00000019  c_wu.l(libinit2.o)
+    0x100003a6   0x00000000   Code   RO         2314    .ARM.Collect$$libinit$$0000001B  c_wu.l(libinit2.o)
+    0x100003a6   0x00000000   Code   RO         2316    .ARM.Collect$$libinit$$0000001D  c_wu.l(libinit2.o)
+    0x100003a6   0x00000000   Code   RO         2318    .ARM.Collect$$libinit$$0000001F  c_wu.l(libinit2.o)
+    0x100003a6   0x00000000   Code   RO         2320    .ARM.Collect$$libinit$$00000021  c_wu.l(libinit2.o)
+    0x100003a6   0x00000000   Code   RO         2322    .ARM.Collect$$libinit$$00000023  c_wu.l(libinit2.o)
+    0x100003a6   0x00000000   Code   RO         2324    .ARM.Collect$$libinit$$00000025  c_wu.l(libinit2.o)
+    0x100003a6   0x00000004   Code   RO         2325    .ARM.Collect$$libinit$$00000026  c_wu.l(libinit2.o)
+    0x100003aa   0x00000000   Code   RO         2326    .ARM.Collect$$libinit$$00000027  c_wu.l(libinit2.o)
+    0x100003aa   0x00000000   Code   RO         2330    .ARM.Collect$$libinit$$0000002E  c_wu.l(libinit2.o)
+    0x100003aa   0x00000000   Code   RO         2332    .ARM.Collect$$libinit$$00000030  c_wu.l(libinit2.o)
+    0x100003aa   0x00000000   Code   RO         2334    .ARM.Collect$$libinit$$00000032  c_wu.l(libinit2.o)
+    0x100003aa   0x00000000   Code   RO         2336    .ARM.Collect$$libinit$$00000034  c_wu.l(libinit2.o)
+    0x100003aa   0x00000002   Code   RO         2337    .ARM.Collect$$libinit$$00000035  c_wu.l(libinit2.o)
+    0x100003ac   0x00000008   Code   RO         2423    .ARM.Collect$$libinit$$0000271B  c_wu.l(libinit5.o)
+    0x100003b4   0x00000002   Code   RO         2506    .ARM.Collect$$libshutdown$$00000000  c_wu.l(libshutdown.o)
+    0x100003b6   0x00000000   Code   RO         2339    .ARM.Collect$$libshutdown$$00000002  c_wu.l(libshutdown2.o)
+    0x100003b6   0x00000004   Code   RO         2340    .ARM.Collect$$libshutdown$$00000003  c_wu.l(libshutdown2.o)
+    0x100003ba   0x00000000   Code   RO         2341    .ARM.Collect$$libshutdown$$00000004  c_wu.l(libshutdown2.o)
+    0x100003ba   0x00000000   Code   RO         2344    .ARM.Collect$$libshutdown$$00000007  c_wu.l(libshutdown2.o)
+    0x100003ba   0x00000000   Code   RO         2347    .ARM.Collect$$libshutdown$$0000000A  c_wu.l(libshutdown2.o)
+    0x100003ba   0x00000000   Code   RO         2349    .ARM.Collect$$libshutdown$$0000000C  c_wu.l(libshutdown2.o)
+    0x100003ba   0x00000004   Code   RO         2350    .ARM.Collect$$libshutdown$$0000000D  c_wu.l(libshutdown2.o)
+    0x100003be   0x00000000   Code   RO         2352    .ARM.Collect$$libshutdown$$0000000F  c_wu.l(libshutdown2.o)
+    0x100003be   0x00000002   Code   RO         2353    .ARM.Collect$$libshutdown$$00000010  c_wu.l(libshutdown2.o)
+    0x100003c0   0x00000000   Code   RO         2006    .ARM.Collect$$rtentry$$00000000  c_wu.l(__rtentry.o)
+    0x100003c0   0x00000000   Code   RO         2114    .ARM.Collect$$rtentry$$00000002  c_wu.l(__rtentry2.o)
+    0x100003c0   0x00000004   Code   RO         2128    .ARM.Collect$$rtentry$$00000007  c_wu.l(__rtentry7.o)
+    0x100003c4   0x00000008   Code   RO         2115    .ARM.Collect$$rtentry$$00000008  c_wu.l(__rtentry2.o)
+    0x100003cc   0x00000004   Code   RO         2117    .ARM.Collect$$rtentry$$0000000A  c_wu.l(__rtentry2.o)
+    0x100003d0   0x00000000   Code   RO         2119    .ARM.Collect$$rtentry$$0000000C  c_wu.l(__rtentry2.o)
+    0x100003d0   0x00000008   Code   RO         2120    .ARM.Collect$$rtentry$$0000000D  c_wu.l(__rtentry2.o)
+    0x100003d8   0x00000004   Code   RO         2129    .ARM.Collect$$rtentry$$00002718  c_wu.l(__rtentry7.o)
+    0x100003dc   0x00000002   Code   RO         2368    .ARM.Collect$$rtexit$$00000000  c_wu.l(rtexit.o)
+    0x100003de   0x00000000   Code   RO         2434    .ARM.Collect$$rtexit$$00000002  c_wu.l(rtexit2.o)
+    0x100003de   0x00000004   Code   RO         2435    .ARM.Collect$$rtexit$$00000003  c_wu.l(rtexit2.o)
+    0x100003e2   0x00000006   Code   RO         2436    .ARM.Collect$$rtexit$$00000004  c_wu.l(rtexit2.o)
+    0x100003e8   0x00000108   Code   RO          160    .text               irq_armv8mml.o
+    0x100004f0   0x00000018   Code   RO         1992    .text               c_wu.l(printf.o)
+    0x10000508   0x0000008a   Code   RO         1994    .text               c_wu.l(rt_memcpy_v6.o)
+    0x10000592   0x00000044   Code   RO         1996    .text               c_wu.l(rt_memclr.o)
+    0x100005d6   0x0000004e   Code   RO         1998    .text               c_wu.l(rt_memclr_w.o)
+    0x10000624   0x00000004   PAD
+    0x10000628   0x0000007c   Code   RO         2000    .text               c_wu.l(strcmpv8m_maindsp.o)
+    0x100006a4   0x0000004e   Code   RO         2009    .text               c_wu.l(_printf_pad.o)
+    0x100006f2   0x00000024   Code   RO         2011    .text               c_wu.l(_printf_truncate.o)
+    0x10000716   0x00000052   Code   RO         2013    .text               c_wu.l(_printf_str.o)
+    0x10000768   0x00000078   Code   RO         2015    .text               c_wu.l(_printf_dec.o)
+    0x100007e0   0x00000028   Code   RO         2017    .text               c_wu.l(_printf_charcount.o)
+    0x10000808   0x000000bc   Code   RO         2021    .text               c_wu.l(_printf_wctomb.o)
+    0x100008c4   0x0000007c   Code   RO         2024    .text               c_wu.l(_printf_longlong_dec.o)
+    0x10000940   0x00000070   Code   RO         2030    .text               c_wu.l(_printf_oct_int_ll.o)
+    0x100009b0   0x00000094   Code   RO         2050    .text               c_wu.l(_printf_hex_int_ll_ptr.o)
+    0x10000a44   0x00000188   Code   RO         2071    .text               c_wu.l(__printf_flags_ss_wp.o)
+    0x10000bcc   0x00000064   Code   RO         2103    .text               c_wu.l(rt_memcpy_w.o)
+    0x10000c30   0x0000008a   Code   RO         2133    .text               c_wu.l(lludiv10.o)
+    0x10000cba   0x000000b2   Code   RO         2135    .text               c_wu.l(_printf_intcommon.o)
+    0x10000d6c   0x0000041c   Code   RO         2137    .text               c_wu.l(_printf_fp_dec.o)
+    0x10001188   0x000002fc   Code   RO         2141    .text               c_wu.l(_printf_fp_hex.o)
+    0x10001484   0x00000030   Code   RO         2144    .text               c_wu.l(_printf_char_common.o)
+    0x100014b4   0x0000002c   Code   RO         2146    .text               c_wu.l(_printf_char.o)
+    0x100014e0   0x0000002c   Code   RO         2148    .text               c_wu.l(_printf_wchar.o)
+    0x1000150c   0x000001c8   Code   RO         2163    .text               c_wu.l(initio_locked.o)
+    0x100016d4   0x00000048   Code   RO         2165    .text               c_wu.l(_c32rtomb.o)
+    0x1000171c   0x00000010   Code   RO         2169    .text               c_wu.l(rt_ctype_table.o)
+    0x1000172c   0x0000000a   Code   RO         2176    .text               c_wu.l(rt_locale_twolibspace.o)
+    0x10001736   0x00000076   Code   RO         2182    .text               c_wu.l(h1_free_threads.o)
+    0x100017ac   0x00000080   Code   RO         2234    .text               c_wu.l(_printf_fp_infnan.o)
+    0x1000182c   0x000000e4   Code   RO         2238    .text               c_wu.l(bigflt0.o)
+    0x10001910   0x000001e2   Code   RO         2265    .text               c_wu.l(flsbuf.o)
+    0x10001af2   0x0000004c   Code   RO         2272    .text               c_wu.l(fclose.o)
+    0x10001b3e   0x00000068   Code   RO         2274    .text               c_wu.l(setvbuf_locked.o)
+    0x10001ba6   0x00000002   PAD
+    0x10001ba8   0x0000014c   Code   RO         2276    .text               c_wu.l(fopen_locked.o)
+    0x10001cf4   0x00000012   Code   RO         2281    .text               c_wu.l(exit.o)
+    0x10001d06   0x0000000e   Code   RO         2283    .text               c_wu.l(defsig_rtred_outer.o)
+    0x10001d14   0x00000008   Code   RO         2361    .text               c_wu.l(libspace.o)
+    0x10001d1c   0x0000000a   Code   RO         2377    .text               c_wu.l(rt_heap_descriptor_twolibspace.o)
+    0x10001d26   0x00000004   Code   RO         2379    .text               c_wu.l(hguard.o)
+    0x10001d2a   0x0000008a   Code   RO         2381    .text               c_wu.l(init_alloc.o)
+    0x10001db4   0x000000a6   Code   RO         2389    .text               c_wu.l(h1_alloc_threads.o)
+    0x10001e5a   0x00000002   PAD
+    0x10001e5c   0x00000040   Code   RO         2399    .text               c_wu.l(_printf_char_file_locked.o)
+    0x10001e9c   0x000000f8   Code   RO         2403    .text               c_wu.l(fseek.o)
+    0x10001f94   0x00000108   Code   RO         2405    .text               c_wu.l(stdio.o)
+    0x1000209c   0x0000000a   Code   RO         2414    .text               c_wu.l(defsig_exit.o)
+    0x100020a6   0x00000002   PAD
+    0x100020a8   0x00000034   Code   RO         2416    .text               c_wu.l(defsig_rtred_inner.o)
+    0x100020dc   0x0000000c   Code   RO         2426    .text               c_wu.l(sys_exit.o)
+    0x100020e8   0x00000002   Code   RO         2430    .text               c_wu.l(use_no_semi.o)
+    0x100020ea   0x00000000   Code   RO         2432    .text               c_wu.l(indicate_semi.o)
+    0x100020ea   0x00000000   Code   RO         2441    .text               c_wu.l(maybetermalloc2.o)
+    0x100020ea   0x00000012   Code   RO         2446    .text               c_wu.l(h1_init_threads.o)
+    0x100020fc   0x00000052   Code   RO         2448    .text               c_wu.l(h1_extend_threads.o)
+    0x1000214e   0x00000042   Code   RO         2456    .text               c_wu.l(ftell.o)
+    0x10002190   0x00000032   Code   RO         2464    .text               c_wu.l(defsig_general.o)
+    0x100021c2   0x0000000e   Code   RO         2466    .text               c_wu.l(defsig_rtmem_outer.o)
+    0x100021d0   0x0000000e   Code   RO         2481    .text               c_wu.l(sys_wrch.o)
+    0x100021de   0x00000004   Code   RO         2494    .text               c_wu.l(rt_errno_addr_twolibspace.o)
+    0x100021e2   0x00000010   Code   RO         2498    .text               c_wu.l(term_alloc.o)
+    0x100021f2   0x00000002   PAD
+    0x100021f4   0x00000050   Code   RO         2500    .text               c_wu.l(defsig_rtmem_inner.o)
+    0x10002244   0x0000000a   Code   RO         2509    .text               c_wu.l(h1_final_threads.o)
+    0x1000224e   0x00000002   PAD
+    0x10002250   0x00000016   Code   RO          742    .text.$Sub$$_fp_init  rtx_lib.o
+    0x10002266   0x00000002   PAD
+    0x10002268   0x0000000c   Code   RO           47    .text.ARM_USART_GetCapabilities  Driver_USART.o
+    0x10002274   0x00000012   Code   RO           45    .text.ARM_USART_GetVersion  Driver_USART.o
+    0x10002286   0x00000002   PAD
+    0x10002288   0x00000158   Code   RO           95    .text.ARM_USARTx_Control  Driver_USART.o
+    0x100023e0   0x0000000c   Code   RO           93    .text.ARM_USARTx_GetRxCount  Driver_USART.o
+    0x100023ec   0x00000038   Code   RO           97    .text.ARM_USARTx_GetStatus  Driver_USART.o
+    0x10002424   0x0000000c   Code   RO           91    .text.ARM_USARTx_GetTxCount  Driver_USART.o
+    0x10002430   0x00000018   Code   RO           73    .text.ARM_USARTx_Initialize  Driver_USART.o
+    0x10002448   0x000000e0   Code   RO           77    .text.ARM_USARTx_PowerControl  Driver_USART.o
+    0x10002528   0x00000082   Code   RO           87    .text.ARM_USARTx_Receive  Driver_USART.o
+    0x100025aa   0x00000002   PAD
+    0x100025ac   0x00000078   Code   RO           85    .text.ARM_USARTx_Send  Driver_USART.o
+    0x10002624   0x0000003c   Code   RO           89    .text.ARM_USARTx_Transfer  Driver_USART.o
+    0x10002660   0x0000001e   Code   RO           75    .text.ARM_USARTx_Uninitialize  Driver_USART.o
+    0x1000267e   0x00000002   PAD
+    0x10002680   0x00000004   Code   RO         1784    .text.BRIDGE_ERROR_Handler  startup_SSE300MPS3.o
+    0x10002684   0x00000004   Code   RO         1752    .text.BusFault_Handler  startup_SSE300MPS3.o
+    0x10002688   0x00000004   Code   RO         1796    .text.CPU0_CTI_0_Handler  startup_SSE300MPS3.o
+    0x1000268c   0x00000004   Code   RO         1798    .text.CPU0_CTI_1_Handler  startup_SSE300MPS3.o
+    0x10002690   0x00000004   Code   RO         1790    .text.CPU0_PPU_Handler  startup_SSE300MPS3.o
+    0x10002694   0x00000004   Code   RO         1792    .text.DEBUG_PPU_Handler  startup_SSE300MPS3.o
+    0x10002698   0x00000004   Code   RO         1760    .text.DebugMon_Handler  startup_SSE300MPS3.o
+    0x1000269c   0x0000001c   Code   RO           65    .text.Driver_USART0_Control  Driver_USART.o
+    0x100026b8   0x0000000c   Code   RO           71    .text.Driver_USART0_GetModemStatus  Driver_USART.o
+    0x100026c4   0x00000010   Code   RO           63    .text.Driver_USART0_GetRxCount  Driver_USART.o
+    0x100026d4   0x00000018   Code   RO           67    .text.Driver_USART0_GetStatus  Driver_USART.o
+    0x100026ec   0x00000010   Code   RO           61    .text.Driver_USART0_GetTxCount  Driver_USART.o
+    0x100026fc   0x00000018   Code   RO           49    .text.Driver_USART0_Initialize  Driver_USART.o
+    0x10002714   0x00000018   Code   RO           53    .text.Driver_USART0_PowerControl  Driver_USART.o
+    0x1000272c   0x0000001c   Code   RO           57    .text.Driver_USART0_Receive  Driver_USART.o
+    0x10002748   0x0000001c   Code   RO           55    .text.Driver_USART0_Send  Driver_USART.o
+    0x10002764   0x0000000c   Code   RO           69    .text.Driver_USART0_SetModemControl  Driver_USART.o
+    0x10002770   0x00000020   Code   RO           59    .text.Driver_USART0_Transfer  Driver_USART.o
+    0x10002790   0x00000010   Code   RO           51    .text.Driver_USART0_Uninitialize  Driver_USART.o
+    0x100027a0   0x00000004   Code   RO         1834    .text.ETHERNET_Handler  startup_SSE300MPS3.o
+    0x100027a4   0x00000004   Code   RO         1848    .text.ETHOS_U55_Handler  startup_SSE300MPS3.o
+    0x100027a8   0x00000008   Code   RO          424    .text.EvrRtxDelay   rtx_evr.o
+    0x100027b0   0x00000008   Code   RO          432    .text.EvrRtxDelayCompleted  rtx_evr.o
+    0x100027b8   0x00000008   Code   RO          422    .text.EvrRtxDelayError  rtx_evr.o
+    0x100027c0   0x00000008   Code   RO          428    .text.EvrRtxDelayStarted  rtx_evr.o
+    0x100027c8   0x00000008   Code   RO          480    .text.EvrRtxEventFlagsWaitTimeout  rtx_evr.o
+    0x100027d0   0x00000008   Code   RO          268    .text.EvrRtxKernelError  rtx_evr.o
+    0x100027d8   0x0000000a   Code   RO          316    .text.EvrRtxKernelErrorNotify  rtx_evr.o
+    0x100027e2   0x00000002   PAD
+    0x100027e4   0x00000008   Code   RO          278    .text.EvrRtxKernelGetState  rtx_evr.o
+    0x100027ec   0x00000002   Code   RO          270    .text.EvrRtxKernelInitialize  rtx_evr.o
+    0x100027ee   0x00000002   PAD
+    0x100027f0   0x00000002   Code   RO          272    .text.EvrRtxKernelInitialized  rtx_evr.o
+    0x100027f2   0x00000002   PAD
+    0x100027f4   0x00000002   Code   RO          280    .text.EvrRtxKernelStart  rtx_evr.o
+    0x100027f6   0x00000002   PAD
+    0x100027f8   0x00000002   Code   RO          282    .text.EvrRtxKernelStarted  rtx_evr.o
+    0x100027fa   0x00000002   PAD
+    0x100027fc   0x0000000e   Code   RO          258    .text.EvrRtxMemoryAlloc  rtx_evr.o
+    0x1000280a   0x00000002   PAD
+    0x1000280c   0x0000000a   Code   RO          264    .text.EvrRtxMemoryBlockAlloc  rtx_evr.o
+    0x10002816   0x00000002   PAD
+    0x10002818   0x0000000c   Code   RO          266    .text.EvrRtxMemoryBlockFree  rtx_evr.o
+    0x10002824   0x0000000e   Code   RO          262    .text.EvrRtxMemoryBlockInit  rtx_evr.o
+    0x10002832   0x00000002   PAD
+    0x10002834   0x0000000c   Code   RO          260    .text.EvrRtxMemoryFree  rtx_evr.o
+    0x10002840   0x0000000c   Code   RO          256    .text.EvrRtxMemoryInit  rtx_evr.o
+    0x1000284c   0x00000008   Code   RO          558    .text.EvrRtxMemoryPoolAllocTimeout  rtx_evr.o
+    0x10002854   0x0000000a   Code   RO          586    .text.EvrRtxMessageQueueCreated  rtx_evr.o
+    0x1000285e   0x00000002   PAD
+    0x10002860   0x0000000a   Code   RO          582    .text.EvrRtxMessageQueueError  rtx_evr.o
+    0x1000286a   0x00000002   PAD
+    0x1000286c   0x0000000e   Code   RO          602    .text.EvrRtxMessageQueueGet  rtx_evr.o
+    0x1000287a   0x00000002   PAD
+    0x1000287c   0x0000000c   Code   RO          604    .text.EvrRtxMessageQueueGetPending  rtx_evr.o
+    0x10002888   0x00000008   Code   RO          606    .text.EvrRtxMessageQueueGetTimeout  rtx_evr.o
+    0x10002890   0x0000000a   Code   RO          596    .text.EvrRtxMessageQueueInsertPending  rtx_evr.o
+    0x1000289a   0x00000002   PAD
+    0x1000289c   0x0000000a   Code   RO          598    .text.EvrRtxMessageQueueInserted  rtx_evr.o
+    0x100028a6   0x00000002   PAD
+    0x100028a8   0x0000000a   Code   RO          600    .text.EvrRtxMessageQueueNotInserted  rtx_evr.o
+    0x100028b2   0x00000002   PAD
+    0x100028b4   0x0000000a   Code   RO          610    .text.EvrRtxMessageQueueNotRetrieved  rtx_evr.o
+    0x100028be   0x00000002   PAD
+    0x100028c0   0x00000010   Code   RO          590    .text.EvrRtxMessageQueuePut  rtx_evr.o
+    0x100028d0   0x0000000c   Code   RO          592    .text.EvrRtxMessageQueuePutPending  rtx_evr.o
+    0x100028dc   0x00000008   Code   RO          594    .text.EvrRtxMessageQueuePutTimeout  rtx_evr.o
+    0x100028e4   0x0000000a   Code   RO          608    .text.EvrRtxMessageQueueRetrieved  rtx_evr.o
+    0x100028ee   0x00000002   PAD
+    0x100028f0   0x0000000a   Code   RO          498    .text.EvrRtxMutexAcquire  rtx_evr.o
+    0x100028fa   0x00000002   PAD
+    0x100028fc   0x0000000a   Code   RO          500    .text.EvrRtxMutexAcquirePending  rtx_evr.o
+    0x10002906   0x00000002   PAD
+    0x10002908   0x00000008   Code   RO          502    .text.EvrRtxMutexAcquireTimeout  rtx_evr.o
+    0x10002910   0x0000000a   Code   RO          504    .text.EvrRtxMutexAcquired  rtx_evr.o
+    0x1000291a   0x00000002   PAD
+    0x1000291c   0x0000000a   Code   RO          494    .text.EvrRtxMutexCreated  rtx_evr.o
+    0x10002926   0x00000002   PAD
+    0x10002928   0x00000008   Code   RO          514    .text.EvrRtxMutexDelete  rtx_evr.o
+    0x10002930   0x00000008   Code   RO          516    .text.EvrRtxMutexDestroyed  rtx_evr.o
+    0x10002938   0x0000000a   Code   RO          490    .text.EvrRtxMutexError  rtx_evr.o
+    0x10002942   0x00000002   PAD
+    0x10002944   0x00000008   Code   RO          492    .text.EvrRtxMutexNew  rtx_evr.o
+    0x1000294c   0x00000008   Code   RO          506    .text.EvrRtxMutexNotAcquired  rtx_evr.o
+    0x10002954   0x00000008   Code   RO          508    .text.EvrRtxMutexRelease  rtx_evr.o
+    0x1000295c   0x0000000a   Code   RO          510    .text.EvrRtxMutexReleased  rtx_evr.o
+    0x10002966   0x00000002   PAD
+    0x10002968   0x00000008   Code   RO          530    .text.EvrRtxSemaphoreAcquireTimeout  rtx_evr.o
+    0x10002970   0x0000000a   Code   RO          366    .text.EvrRtxThreadBlocked  rtx_evr.o
+    0x1000297a   0x00000002   PAD
+    0x1000297c   0x0000000c   Code   RO          324    .text.EvrRtxThreadCreated  rtx_evr.o
+    0x10002988   0x00000008   Code   RO          378    .text.EvrRtxThreadDestroyed  rtx_evr.o
+    0x10002990   0x0000000a   Code   RO          320    .text.EvrRtxThreadError  rtx_evr.o
+    0x1000299a   0x00000002   PAD
+    0x1000299c   0x00000002   Code   RO          374    .text.EvrRtxThreadExit  rtx_evr.o
+    0x1000299e   0x00000002   PAD
+    0x100029a0   0x0000000e   Code   RO          418    .text.EvrRtxThreadFlagsWaitCompleted  rtx_evr.o
+    0x100029ae   0x00000002   PAD
+    0x100029b0   0x00000008   Code   RO          416    .text.EvrRtxThreadFlagsWaitTimeout  rtx_evr.o
+    0x100029b8   0x00000008   Code   RO          332    .text.EvrRtxThreadGetId  rtx_evr.o
+    0x100029c0   0x00000008   Code   RO          364    .text.EvrRtxThreadJoined  rtx_evr.o
+    0x100029c8   0x0000000c   Code   RO          322    .text.EvrRtxThreadNew  rtx_evr.o
+    0x100029d4   0x00000008   Code   RO          370    .text.EvrRtxThreadPreempted  rtx_evr.o
+    0x100029dc   0x00000008   Code   RO          372    .text.EvrRtxThreadSwitched  rtx_evr.o
+    0x100029e4   0x0000000a   Code   RO          368    .text.EvrRtxThreadUnblocked  rtx_evr.o
+    0x100029ee   0x00000002   PAD
+    0x100029f0   0x0000000a   Code   RO          436    .text.EvrRtxTimerCallback  rtx_evr.o
+    0x100029fa   0x00000002   PAD
+    0x100029fc   0x00000004   Code   RO         1858    .text.GPIO0_0_Handler  startup_SSE300MPS3.o
+    0x10002a00   0x00000004   Code   RO         1878    .text.GPIO0_10_Handler  startup_SSE300MPS3.o
+    0x10002a04   0x00000004   Code   RO         1880    .text.GPIO0_11_Handler  startup_SSE300MPS3.o
+    0x10002a08   0x00000004   Code   RO         1882    .text.GPIO0_12_Handler  startup_SSE300MPS3.o
+    0x10002a0c   0x00000004   Code   RO         1884    .text.GPIO0_13_Handler  startup_SSE300MPS3.o
+    0x10002a10   0x00000004   Code   RO         1886    .text.GPIO0_14_Handler  startup_SSE300MPS3.o
+    0x10002a14   0x00000004   Code   RO         1888    .text.GPIO0_15_Handler  startup_SSE300MPS3.o
+    0x10002a18   0x00000004   Code   RO         1860    .text.GPIO0_1_Handler  startup_SSE300MPS3.o
+    0x10002a1c   0x00000004   Code   RO         1862    .text.GPIO0_2_Handler  startup_SSE300MPS3.o
+    0x10002a20   0x00000004   Code   RO         1864    .text.GPIO0_3_Handler  startup_SSE300MPS3.o
+    0x10002a24   0x00000004   Code   RO         1866    .text.GPIO0_4_Handler  startup_SSE300MPS3.o
+    0x10002a28   0x00000004   Code   RO         1868    .text.GPIO0_5_Handler  startup_SSE300MPS3.o
+    0x10002a2c   0x00000004   Code   RO         1870    .text.GPIO0_6_Handler  startup_SSE300MPS3.o
+    0x10002a30   0x00000004   Code   RO         1872    .text.GPIO0_7_Handler  startup_SSE300MPS3.o
+    0x10002a34   0x00000004   Code   RO         1874    .text.GPIO0_8_Handler  startup_SSE300MPS3.o
+    0x10002a38   0x00000004   Code   RO         1876    .text.GPIO0_9_Handler  startup_SSE300MPS3.o
+    0x10002a3c   0x00000004   Code   RO         1850    .text.GPIO0_Combined_Handler  startup_SSE300MPS3.o
+    0x10002a40   0x00000004   Code   RO         1890    .text.GPIO1_0_Handler  startup_SSE300MPS3.o
+    0x10002a44   0x00000004   Code   RO         1910    .text.GPIO1_10_Handler  startup_SSE300MPS3.o
+    0x10002a48   0x00000004   Code   RO         1912    .text.GPIO1_11_Handler  startup_SSE300MPS3.o
+    0x10002a4c   0x00000004   Code   RO         1914    .text.GPIO1_12_Handler  startup_SSE300MPS3.o
+    0x10002a50   0x00000004   Code   RO         1916    .text.GPIO1_13_Handler  startup_SSE300MPS3.o
+    0x10002a54   0x00000004   Code   RO         1918    .text.GPIO1_14_Handler  startup_SSE300MPS3.o
+    0x10002a58   0x00000004   Code   RO         1920    .text.GPIO1_15_Handler  startup_SSE300MPS3.o
+    0x10002a5c   0x00000004   Code   RO         1892    .text.GPIO1_1_Handler  startup_SSE300MPS3.o
+    0x10002a60   0x00000004   Code   RO         1894    .text.GPIO1_2_Handler  startup_SSE300MPS3.o
+    0x10002a64   0x00000004   Code   RO         1896    .text.GPIO1_3_Handler  startup_SSE300MPS3.o
+    0x10002a68   0x00000004   Code   RO         1898    .text.GPIO1_4_Handler  startup_SSE300MPS3.o
+    0x10002a6c   0x00000004   Code   RO         1900    .text.GPIO1_5_Handler  startup_SSE300MPS3.o
+    0x10002a70   0x00000004   Code   RO         1902    .text.GPIO1_6_Handler  startup_SSE300MPS3.o
+    0x10002a74   0x00000004   Code   RO         1904    .text.GPIO1_7_Handler  startup_SSE300MPS3.o
+    0x10002a78   0x00000004   Code   RO         1906    .text.GPIO1_8_Handler  startup_SSE300MPS3.o
+    0x10002a7c   0x00000004   Code   RO         1908    .text.GPIO1_9_Handler  startup_SSE300MPS3.o
+    0x10002a80   0x00000004   Code   RO         1852    .text.GPIO1_Combined_Handler  startup_SSE300MPS3.o
+    0x10002a84   0x00000004   Code   RO         1922    .text.GPIO2_0_Handler  startup_SSE300MPS3.o
+    0x10002a88   0x00000004   Code   RO         1942    .text.GPIO2_10_Handler  startup_SSE300MPS3.o
+    0x10002a8c   0x00000004   Code   RO         1944    .text.GPIO2_11_Handler  startup_SSE300MPS3.o
+    0x10002a90   0x00000004   Code   RO         1946    .text.GPIO2_12_Handler  startup_SSE300MPS3.o
+    0x10002a94   0x00000004   Code   RO         1948    .text.GPIO2_13_Handler  startup_SSE300MPS3.o
+    0x10002a98   0x00000004   Code   RO         1950    .text.GPIO2_14_Handler  startup_SSE300MPS3.o
+    0x10002a9c   0x00000004   Code   RO         1952    .text.GPIO2_15_Handler  startup_SSE300MPS3.o
+    0x10002aa0   0x00000004   Code   RO         1924    .text.GPIO2_1_Handler  startup_SSE300MPS3.o
+    0x10002aa4   0x00000004   Code   RO         1926    .text.GPIO2_2_Handler  startup_SSE300MPS3.o
+    0x10002aa8   0x00000004   Code   RO         1928    .text.GPIO2_3_Handler  startup_SSE300MPS3.o
+    0x10002aac   0x00000004   Code   RO         1930    .text.GPIO2_4_Handler  startup_SSE300MPS3.o
+    0x10002ab0   0x00000004   Code   RO         1932    .text.GPIO2_5_Handler  startup_SSE300MPS3.o
+    0x10002ab4   0x00000004   Code   RO         1934    .text.GPIO2_6_Handler  startup_SSE300MPS3.o
+    0x10002ab8   0x00000004   Code   RO         1936    .text.GPIO2_7_Handler  startup_SSE300MPS3.o
+    0x10002abc   0x00000004   Code   RO         1938    .text.GPIO2_8_Handler  startup_SSE300MPS3.o
+    0x10002ac0   0x00000004   Code   RO         1940    .text.GPIO2_9_Handler  startup_SSE300MPS3.o
+    0x10002ac4   0x00000004   Code   RO         1854    .text.GPIO2_Combined_Handler  startup_SSE300MPS3.o
+    0x10002ac8   0x00000004   Code   RO         1954    .text.GPIO3_0_Handler  startup_SSE300MPS3.o
+    0x10002acc   0x00000004   Code   RO         1956    .text.GPIO3_1_Handler  startup_SSE300MPS3.o
+    0x10002ad0   0x00000004   Code   RO         1958    .text.GPIO3_2_Handler  startup_SSE300MPS3.o
+    0x10002ad4   0x00000004   Code   RO         1960    .text.GPIO3_3_Handler  startup_SSE300MPS3.o
+    0x10002ad8   0x00000004   Code   RO         1856    .text.GPIO3_Combined_Handler  startup_SSE300MPS3.o
+    0x10002adc   0x00000004   Code   RO         1748    .text.HardFault_Handler  startup_SSE300MPS3.o
+    0x10002ae0   0x00000004   Code   RO         1836    .text.I2S_Handler   startup_SSE300MPS3.o
+    0x10002ae4   0x00000014   Code   RO          170    .text.IsException   rtx_delay.o
+    0x10002af8   0x00000014   Code   RO          641    .text.IsException   rtx_kernel.o
+    0x10002b0c   0x00000014   Code   RO          884    .text.IsException   rtx_msgqueue.o
+    0x10002b20   0x00000014   Code   RO          965    .text.IsException   rtx_mutex.o
+    0x10002b34   0x00000014   Code   RO         1168    .text.IsException   rtx_thread.o
+    0x10002b48   0x0000002e   Code   RO          172    .text.IsIrqMasked   rtx_delay.o
+    0x10002b76   0x00000002   PAD
+    0x10002b78   0x0000002e   Code   RO          643    .text.IsIrqMasked   rtx_kernel.o
+    0x10002ba6   0x00000002   PAD
+    0x10002ba8   0x0000002e   Code   RO          886    .text.IsIrqMasked   rtx_msgqueue.o
+    0x10002bd6   0x00000002   PAD
+    0x10002bd8   0x0000002e   Code   RO          967    .text.IsIrqMasked   rtx_mutex.o
+    0x10002c06   0x00000002   PAD
+    0x10002c08   0x0000002e   Code   RO         1170    .text.IsIrqMasked   rtx_thread.o
+    0x10002c36   0x00000002   PAD
+    0x10002c38   0x00000022   Code   RO          920    .text.IsMessageQueuePtrValid  rtx_msgqueue.o
+    0x10002c5a   0x00000002   PAD
+    0x10002c5c   0x00000022   Code   RO          983    .text.IsMutexPtrValid  rtx_mutex.o
+    0x10002c7e   0x00000002   PAD
+    0x10002c80   0x00000018   Code   RO          647    .text.IsPrivileged  rtx_kernel.o
+    0x10002c98   0x00000022   Code   RO         1254    .text.IsThreadPtrValid  rtx_thread.o
+    0x10002cba   0x00000002   PAD
+    0x10002cbc   0x00000004   Code   RO         1786    .text.MGMT_PPU_Handler  startup_SSE300MPS3.o
+    0x10002cc0   0x00000004   Code   RO         1778    .text.MPC_Handler   startup_SSE300MPS3.o
+    0x10002cc4   0x00000004   Code   RO         1782    .text.MSC_Handler   startup_SSE300MPS3.o
+    0x10002cc8   0x00000018   Code   RO          786    .text.MemBlockPtr   rtx_memory.o
+    0x10002ce0   0x0000000a   Code   RO          784    .text.MemHeadPtr    rtx_memory.o
+    0x10002cea   0x00000002   PAD
+    0x10002cec   0x00000004   Code   RO         1750    .text.MemManage_Handler  startup_SSE300MPS3.o
+    0x10002cf0   0x00000052   Code   RO          936    .text.MessageQueueGet  rtx_msgqueue.o
+    0x10002d42   0x00000002   PAD
+    0x10002d44   0x000000aa   Code   RO          928    .text.MessageQueuePut  rtx_msgqueue.o
+    0x10002dee   0x00000002   PAD
+    0x10002df0   0x00000042   Code   RO          924    .text.MessageQueueRemove  rtx_msgqueue.o
+    0x10002e32   0x00000002   PAD
+    0x10002e34   0x00000004   Code   RO         1746    .text.NMI_Handler   startup_SSE300MPS3.o
+    0x10002e38   0x00000004   Code   RO         1768    .text.NONSEC_WATCHDOG_Handler  startup_SSE300MPS3.o
+    0x10002e3c   0x00000004   Code   RO         1766    .text.NONSEC_WATCHDOG_RESET_REQ_Handler  startup_SSE300MPS3.o
+    0x10002e40   0x0000000c   Code   RO          141    .text.OS_Tick_AcknowledgeIRQ  os_systick.o
+    0x10002e4c   0x0000003c   Code   RO          137    .text.OS_Tick_Enable  os_systick.o
+    0x10002e88   0x00000006   Code   RO          143    .text.OS_Tick_GetIRQn  os_systick.o
+    0x10002e8e   0x00000002   PAD
+    0x10002e90   0x0000007e   Code   RO          135    .text.OS_Tick_Setup  os_systick.o
+    0x10002f0e   0x00000002   PAD
+    0x10002f10   0x00000004   Code   RO         1780    .text.PPC_Handler   startup_SSE300MPS3.o
+    0x10002f14   0x00000032   Code   RO         1968  * .text.Reset_Handler  startup_SSE300MPS3.o
+    0x10002f46   0x00000002   PAD
+    0x10002f48   0x00000004   Code   RO         1770    .text.SLOWCLK_Timer_Handler  startup_SSE300MPS3.o
+    0x10002f4c   0x00000004   Code   RO         1842    .text.SPI_ADC_Handler  startup_SSE300MPS3.o
+    0x10002f50   0x00000004   Code   RO         1844    .text.SPI_SHIELD0_Handler  startup_SSE300MPS3.o
+    0x10002f54   0x00000004   Code   RO         1846    .text.SPI_SHIELD1_Handler  startup_SSE300MPS3.o
+    0x10002f58   0x00000050   Code   RO          705    .text.SVC_Setup     rtx_kernel.o
+    0x10002fa8   0x00000004   Code   RO         1788    .text.SYS_PPU_Handler  startup_SSE300MPS3.o
+    0x10002fac   0x00000004   Code   RO         1756    .text.SecureFault_Handler  startup_SSE300MPS3.o
+    0x10002fb0   0x00000010   Code   RO         1089    .text.SetPendSV     rtx_system.o
+    0x10002fc0   0x00000034   Code   RO         1134    .text.SetPrivileged  rtx_thread.o
+    0x10002ff4   0x00000018   Code   RO         1130    .text.StackOffsetR0  rtx_thread.o
+    0x1000300c   0x00000132   Code   RO         1980    .text.SystemInit    system_SSE300MPS3.o
+    0x1000313e   0x00000002   PAD
+    0x10003140   0x00000004   Code   RO         1800    .text.System_Timestamp_Counter_Handler  startup_SSE300MPS3.o
+    0x10003144   0x00000004   Code   RO         1772    .text.TFM_TIMER0_IRQ_Handler  startup_SSE300MPS3.o
+    0x10003148   0x00000004   Code   RO         1774    .text.TIMER1_Handler  startup_SSE300MPS3.o
+    0x1000314c   0x00000004   Code   RO         1776    .text.TIMER2_Handler  startup_SSE300MPS3.o
+    0x10003150   0x00000004   Code   RO         1794    .text.TIMER3_AON_Handler  startup_SSE300MPS3.o
+    0x10003154   0x00000004   Code   RO         1838    .text.TOUCH_SCREEN_Handler  startup_SSE300MPS3.o
+    0x10003158   0x0000007c   Code   RO         1262    .text.ThreadFlagsCheck  rtx_thread.o
+    0x100031d4   0x0000009c   Code   RO         1365    .text.TimerInsert   rtx_timer.o
+    0x10003270   0x00000028   Code   RO         1361    .text.TimerUnlink   rtx_timer.o
+    0x10003298   0x00000004   Code   RO         1822    .text.UART0_Combined_Handler  startup_SSE300MPS3.o
+    0x1000329c   0x00000004   Code   RO         1824    .text.UART1_Combined_Handler  startup_SSE300MPS3.o
+    0x100032a0   0x00000004   Code   RO         1826    .text.UART2_Combined_Handler  startup_SSE300MPS3.o
+    0x100032a4   0x00000004   Code   RO         1828    .text.UART3_Combined_Handler  startup_SSE300MPS3.o
+    0x100032a8   0x00000004   Code   RO         1830    .text.UART4_Combined_Handler  startup_SSE300MPS3.o
+    0x100032ac   0x00000004   Code   RO         1966    .text.UART5_Handler  startup_SSE300MPS3.o
+    0x100032b0   0x00000004   Code   RO         1832    .text.UARTOVF_Handler  startup_SSE300MPS3.o
+    0x100032b4   0x00000082   Code   RO           41    .text.UARTRX0_Handler  Driver_USART.o
+    0x10003336   0x00000002   PAD
+    0x10003338   0x00000004   Code   RO         1806    .text.UARTRX1_Handler  startup_SSE300MPS3.o
+    0x1000333c   0x00000004   Code   RO         1810    .text.UARTRX2_Handler  startup_SSE300MPS3.o
+    0x10003340   0x00000004   Code   RO         1814    .text.UARTRX3_Handler  startup_SSE300MPS3.o
+    0x10003344   0x00000004   Code   RO         1818    .text.UARTRX4_Handler  startup_SSE300MPS3.o
+    0x10003348   0x00000004   Code   RO         1962    .text.UARTRX5_Handler  startup_SSE300MPS3.o
+    0x1000334c   0x00000076   Code   RO           43    .text.UARTTX0_Handler  Driver_USART.o
+    0x100033c2   0x00000002   PAD
+    0x100033c4   0x00000004   Code   RO         1808    .text.UARTTX1_Handler  startup_SSE300MPS3.o
+    0x100033c8   0x00000004   Code   RO         1812    .text.UARTTX2_Handler  startup_SSE300MPS3.o
+    0x100033cc   0x00000004   Code   RO         1816    .text.UARTTX3_Handler  startup_SSE300MPS3.o
+    0x100033d0   0x00000004   Code   RO         1820    .text.UARTTX4_Handler  startup_SSE300MPS3.o
+    0x100033d4   0x00000004   Code   RO         1964    .text.UARTTX5_Handler  startup_SSE300MPS3.o
+    0x100033d8   0x00000004   Code   RO         1840    .text.USB_Handler   startup_SSE300MPS3.o
+    0x100033dc   0x00000004   Code   RO         1754    .text.UsageFault_Handler  startup_SSE300MPS3.o
+    0x100033e0   0x0000002a   Code   RO           81    .text.__NVIC_ClearPendingIRQ  Driver_USART.o
+    0x1000340a   0x00000002   PAD
+    0x1000340c   0x00000032   Code   RO           79    .text.__NVIC_DisableIRQ  Driver_USART.o
+    0x1000343e   0x00000002   PAD
+    0x10003440   0x0000002a   Code   RO           83    .text.__NVIC_EnableIRQ  Driver_USART.o
+    0x1000346a   0x00000002   PAD
+    0x1000346c   0x00000010   Code   RO          707    .text.__NVIC_GetPriorityGrouping  rtx_kernel.o
+    0x1000347c   0x00000096   Code   RO          744    .text.__user_perthread_libspace  rtx_lib.o
+    0x10003512   0x00000002   PAD
+    0x10003514   0x00000020   Code   RO          754    .text._mutex_acquire  rtx_lib.o
+    0x10003534   0x00000012   Code   RO          758    .text._mutex_free   rtx_lib.o
+    0x10003546   0x00000002   PAD
+    0x10003548   0x00000032   Code   RO          752    .text._mutex_initialize  rtx_lib.o
+    0x1000357a   0x00000002   PAD
+    0x1000357c   0x0000001c   Code   RO          756    .text._mutex_release  rtx_lib.o
+    0x10003598   0x00000008   Code   RO          740    .text._platform_post_stackheap_init  rtx_lib.o
+    0x100035a0   0x0000004a   Code   RO          112    .text._sys_close    retarget_io.o
+    0x100035ea   0x00000002   PAD
+    0x100035ec   0x0000004a   Code   RO          122    .text._sys_flen     retarget_io.o
+    0x10003636   0x00000002   PAD
+    0x10003638   0x00000048   Code   RO          118    .text._sys_istty    retarget_io.o
+    0x10003680   0x00000084   Code   RO          110    .text._sys_open     retarget_io.o
+    0x10003704   0x00000052   Code   RO          120    .text._sys_seek     retarget_io.o
+    0x10003756   0x00000002   PAD
+    0x10003758   0x00000098   Code   RO          114    .text._sys_write    retarget_io.o
+    0x100037f0   0x00000024   Code   RO           13    .text.app_main      hello.o
+    0x10003814   0x0000004e   Code   RO           15    .text.app_main_thread  hello.o
+    0x10003862   0x00000002   PAD
+    0x10003864   0x00000038   Code   RO         1264    .text.atomic_chk32_all  rtx_thread.o
+    0x1000389c   0x00000034   Code   RO         1266    .text.atomic_chk32_any  rtx_thread.o
+    0x100038d0   0x0000002c   Code   RO         1091    .text.atomic_dec16_nz  rtx_system.o
+    0x100038fc   0x00000020   Code   RO          811    .text.atomic_dec32  rtx_mempool.o
+    0x1000391c   0x00000028   Code   RO          938    .text.atomic_dec32_nz  rtx_msgqueue.o
+    0x10003944   0x00000034   Code   RO         1093    .text.atomic_inc16_lim  rtx_system.o
+    0x10003978   0x00000038   Code   RO         1097    .text.atomic_inc16_lt  rtx_system.o
+    0x100039b0   0x00000020   Code   RO          805    .text.atomic_inc32  rtx_mempool.o
+    0x100039d0   0x00000020   Code   RO          930    .text.atomic_inc32  rtx_msgqueue.o
+    0x100039f0   0x00000028   Code   RO          803    .text.atomic_link_get  rtx_mempool.o
+    0x10003a18   0x00000030   Code   RO          809    .text.atomic_link_put  rtx_mempool.o
+    0x10003a48   0x00000028   Code   RO          940    .text.atomic_wr8    rtx_msgqueue.o
+    0x10003a70   0x000000ac   Code   RO          898    .text.isrRtxMessageQueueGet  rtx_msgqueue.o
+    0x10003b1c   0x000000bc   Code   RO          894    .text.isrRtxMessageQueuePut  rtx_msgqueue.o
+    0x10003bd8   0x00000054   Code   RO         1073    .text.isr_queue_get  rtx_system.o
+    0x10003c2c   0x0000005e   Code   RO         1087    .text.isr_queue_put  rtx_system.o
+    0x10003c8a   0x00000002   PAD
+    0x10003c8c   0x00000014   Code   RO            4    .text.main          main.o
+    0x10003ca0   0x00000054   Code   RO          168    .text.osDelay       rtx_delay.o
+    0x10003cf4   0x00000042   Code   RO          651    .text.osKernelGetState  rtx_kernel.o
+    0x10003d36   0x00000002   PAD
+    0x10003d38   0x0000004a   Code   RO          639    .text.osKernelInitialize  rtx_kernel.o
+    0x10003d82   0x00000002   PAD
+    0x10003d84   0x00000046   Code   RO          655    .text.osKernelStart  rtx_kernel.o
+    0x10003dca   0x00000002   PAD
+    0x10003dcc   0x0000007e   Code   RO          896    .text.osMessageQueueGet  rtx_msgqueue.o
+    0x10003e4a   0x00000002   PAD
+    0x10003e4c   0x0000008a   Code   RO          892    .text.osMessageQueuePut  rtx_msgqueue.o
+    0x10003ed6   0x00000002   PAD
+    0x10003ed8   0x00000064   Code   RO          973    .text.osMutexAcquire  rtx_mutex.o
+    0x10003f3c   0x00000056   Code   RO          979    .text.osMutexDelete  rtx_mutex.o
+    0x10003f92   0x00000002   PAD
+    0x10003f94   0x00000056   Code   RO          963    .text.osMutexNew    rtx_mutex.o
+    0x10003fea   0x00000002   PAD
+    0x10003fec   0x00000056   Code   RO          975    .text.osMutexRelease  rtx_mutex.o
+    0x10004042   0x00000002   PAD
+    0x10004044   0x00000030   Code   RO         1394    .text.osRtxErrorNotify  RTX_Config.o
+    0x10004074   0x0000000a   Code   RO         1077    .text.osRtxEventFlagsObject  rtx_system.o
+    0x1000407e   0x00000002   PAD
+    0x10004080   0x00000008   Code   RO         1392    .text.osRtxIdleThread  RTX_Config.o
+    0x10004088   0x00000002   Code   RO          635    .text.osRtxKernelBeforeInit  rtx_kernel.o
+    0x1000408a   0x00000002   PAD
+    0x1000408c   0x0000001c   Code   RO          637    .text.osRtxKernelErrorNotify  rtx_kernel.o
+    0x100040a8   0x0000000c   Code   RO         1069    .text.osRtxKernelGetState  rtx_system.o
+    0x100040b4   0x0000000c   Code   RO         1138    .text.osRtxKernelGetState  rtx_thread.o
+    0x100040c0   0x0000000c   Code   RO          701    .text.osRtxKernelState  rtx_kernel.o
+    0x100040cc   0x0000014c   Code   RO          788    .text.osRtxMemoryAlloc  rtx_memory.o
+    0x10004218   0x000000c2   Code   RO          790    .text.osRtxMemoryFree  rtx_memory.o
+    0x100042da   0x00000002   PAD
+    0x100042dc   0x00000096   Code   RO          782    .text.osRtxMemoryInit  rtx_memory.o
+    0x10004372   0x00000002   PAD
+    0x10004374   0x0000004a   Code   RO          801    .text.osRtxMemoryPoolAlloc  rtx_mempool.o
+    0x100043be   0x00000002   PAD
+    0x100043c0   0x00000064   Code   RO          807    .text.osRtxMemoryPoolFree  rtx_mempool.o
+    0x10004424   0x00000098   Code   RO          799    .text.osRtxMemoryPoolInit  rtx_mempool.o
+    0x100044bc   0x0000000a   Code   RO         1081    .text.osRtxMemoryPoolObject  rtx_system.o
+    0x100044c6   0x00000002   PAD
+    0x100044c8   0x0000000a   Code   RO         1083    .text.osRtxMessageObject  rtx_system.o
+    0x100044d2   0x00000002   PAD
+    0x100044d4   0x0000000a   Code   RO          878    .text.osRtxMessageQueueId  rtx_msgqueue.o
+    0x100044de   0x00000002   PAD
+    0x100044e0   0x00000144   Code   RO          922    .text.osRtxMessageQueuePostProcess  rtx_msgqueue.o
+    0x10004624   0x0000003e   Code   RO          876    .text.osRtxMessageQueueTimerSetup  rtx_msgqueue.o
+    0x10004662   0x00000002   PAD
+    0x10004664   0x0000005a   Code   RO          999    .text.osRtxMutexDestroy  rtx_mutex.o
+    0x100046be   0x00000002   PAD
+    0x100046c0   0x0000000a   Code   RO          985    .text.osRtxMutexId  rtx_mutex.o
+    0x100046ca   0x00000002   PAD
+    0x100046cc   0x0000000a   Code   RO         1126    .text.osRtxMutexObject  rtx_thread.o
+    0x100046d6   0x00000002   PAD
+    0x100046d8   0x00000098   Code   RO          957    .text.osRtxMutexOwnerRelease  rtx_mutex.o
+    0x10004770   0x000000ac   Code   RO          961    .text.osRtxMutexOwnerRestore  rtx_mutex.o
+    0x1000481c   0x000000fc   Code   RO          997    .text.osRtxMutexOwnerUnlock  rtx_mutex.o
+    0x10004918   0x0000000a   Code   RO          926    .text.osRtxObject   rtx_msgqueue.o
+    0x10004922   0x00000002   PAD
+    0x10004924   0x0000000a   Code   RO          959    .text.osRtxObject   rtx_mutex.o
+    0x1000492e   0x00000002   PAD
+    0x10004930   0x0000000a   Code   RO         1095    .text.osRtxObject   rtx_system.o
+    0x1000493a   0x00000002   PAD
+    0x1000493c   0x0000000a   Code   RO         1114    .text.osRtxObject   rtx_thread.o
+    0x10004946   0x00000002   PAD
+    0x10004948   0x000000b8   Code   RO         1071    .text.osRtxPendSV_Handler  rtx_system.o
+    0x10004a00   0x00000042   Code   RO         1085    .text.osRtxPostProcess  rtx_system.o
+    0x10004a42   0x00000002   PAD
+    0x10004a44   0x0000000a   Code   RO         1079    .text.osRtxSemaphoreObject  rtx_system.o
+    0x10004a4e   0x00000002   PAD
+    0x10004a50   0x00000010   Code   RO          748    .text.osRtxThreadBeforeFree  rtx_lib.o
+    0x10004a60   0x00000086   Code   RO         1142    .text.osRtxThreadBlock  rtx_thread.o
+    0x10004ae6   0x00000002   PAD
+    0x10004ae8   0x000000f8   Code   RO         1148    .text.osRtxThreadDelayInsert  rtx_thread.o
+    0x10004be0   0x0000009c   Code   RO         1120    .text.osRtxThreadDelayRemove  rtx_thread.o
+    0x10004c7c   0x0000014e   Code   RO         1122    .text.osRtxThreadDelayTick  rtx_thread.o
+    0x10004dca   0x00000002   PAD
+    0x10004dcc   0x00000060   Code   RO         1154    .text.osRtxThreadDestroy  rtx_thread.o
+    0x10004e2c   0x00000096   Code   RO         1136    .text.osRtxThreadDispatch  rtx_thread.o
+    0x10004ec2   0x00000002   PAD
+    0x10004ec4   0x000000a2   Code   RO         1156    .text.osRtxThreadFree  rtx_thread.o
+    0x10004f66   0x00000002   PAD
+    0x10004f68   0x0000000c   Code   RO          934    .text.osRtxThreadGetRunning  rtx_msgqueue.o
+    0x10004f74   0x0000000c   Code   RO          989    .text.osRtxThreadGetRunning  rtx_mutex.o
+    0x10004f80   0x0000000c   Code   RO         1140    .text.osRtxThreadGetRunning  rtx_thread.o
+    0x10004f8c   0x0000000c   Code   RO         1359    .text.osRtxThreadGetRunning  rtx_timer.o
+    0x10004f98   0x0000000a   Code   RO         1162    .text.osRtxThreadId  rtx_thread.o
+    0x10004fa2   0x00000002   PAD
+    0x10004fa4   0x0000003c   Code   RO         1152    .text.osRtxThreadJoinWakeup  rtx_thread.o
+    0x10004fe0   0x00000036   Code   RO         1110    .text.osRtxThreadListGet  rtx_thread.o
+    0x10005016   0x00000002   PAD
+    0x10005018   0x00000074   Code   RO         1106    .text.osRtxThreadListPut  rtx_thread.o
+    0x1000508c   0x00000032   Code   RO         1116    .text.osRtxThreadListRemove  rtx_thread.o
+    0x100050be   0x00000002   PAD
+    0x100050c0   0x00000022   Code   RO         1124    .text.osRtxThreadListRoot  rtx_thread.o
+    0x100050e2   0x00000002   PAD
+    0x100050e4   0x00000056   Code   RO         1112    .text.osRtxThreadListSort  rtx_thread.o
+    0x1000513a   0x00000002   PAD
+    0x1000513c   0x0000000a   Code   RO         1075    .text.osRtxThreadObject  rtx_system.o
+    0x10005146   0x00000002   PAD
+    0x10005148   0x0000000a   Code   RO         1108    .text.osRtxThreadObject  rtx_thread.o
+    0x10005152   0x00000002   PAD
+    0x10005154   0x00000044   Code   RO         1260    .text.osRtxThreadPostProcess  rtx_thread.o
+    0x10005198   0x00000020   Code   RO         1118    .text.osRtxThreadReadyPut  rtx_thread.o
+    0x100051b8   0x00000022   Code   RO         1128    .text.osRtxThreadRegPtr  rtx_thread.o
+    0x100051da   0x00000002   PAD
+    0x100051dc   0x00000014   Code   RO         1296    .text.osRtxThreadSetRunning  rtx_thread.o
+    0x100051f0   0x00000014   Code   RO         1363    .text.osRtxThreadSetRunning  rtx_timer.o
+    0x10005204   0x0000003c   Code   RO         1150    .text.osRtxThreadStackCheck  rtx_thread.o
+    0x10005240   0x00000096   Code   RO         1160    .text.osRtxThreadStartup  rtx_thread.o
+    0x100052d6   0x00000002   PAD
+    0x100052d8   0x0000002e   Code   RO         1132    .text.osRtxThreadSwitch  rtx_thread.o
+    0x10005306   0x00000002   PAD
+    0x10005308   0x00000076   Code   RO         1146    .text.osRtxThreadWaitEnter  rtx_thread.o
+    0x1000537e   0x00000002   PAD
+    0x10005380   0x00000046   Code   RO         1144    .text.osRtxThreadWaitExit  rtx_thread.o
+    0x100053c6   0x00000002   PAD
+    0x100053c8   0x00000110   Code   RO         1067    .text.osRtxTick_Handler  rtx_system.o
+    0x100054d8   0x00000030   Code   RO         1335    .text.osRtxTimerSetup  rtx_timer.o
+    0x10005508   0x00000032   Code   RO         1339    .text.osRtxTimerThread  rtx_timer.o
+    0x1000553a   0x00000002   PAD
+    0x1000553c   0x000000dc   Code   RO         1337    .text.osRtxTimerTick  rtx_timer.o
+    0x10005618   0x00000010   Code   RO         1256    .text.osThreadEntry  rtx_thread.o
+    0x10005628   0x00000024   Code   RO         1208    .text.osThreadExit  rtx_thread.o
+    0x1000564c   0x0000003a   Code   RO         1184    .text.osThreadGetId  rtx_thread.o
+    0x10005686   0x00000002   PAD
+    0x10005688   0x00000072   Code   RO         1166    .text.osThreadNew   rtx_thread.o
+    0x100056fa   0x00000002   PAD
+    0x100056fc   0x00000036   Code   RO          746    .text.os_kernel_is_active  rtx_lib.o
+    0x10005732   0x00000002   PAD
+    0x10005734   0x0000004c   Code   RO           28    .text.stderr_putchar  retarget_stdio.o
+    0x10005780   0x0000008e   Code   RO           26    .text.stdio_init    retarget_stdio.o
+    0x1000580e   0x00000002   PAD
+    0x10005810   0x0000004c   Code   RO           30    .text.stdout_putchar  retarget_stdio.o
+    0x1000585c   0x00000050   Code   RO          176    .text.svcRtxDelay   rtx_delay.o
+    0x100058ac   0x00000016   Code   RO          653    .text.svcRtxKernelGetState  rtx_kernel.o
+    0x100058c2   0x00000002   PAD
+    0x100058c4   0x00000304   Code   RO          699    .text.svcRtxKernelInitialize  rtx_kernel.o
+    0x10005bc8   0x000000a4   Code   RO          703    .text.svcRtxKernelStart  rtx_kernel.o
+    0x10005c6c   0x00000168   Code   RO          942    .text.svcRtxMessageQueueGet  rtx_msgqueue.o
+    0x10005dd4   0x00000290   Code   RO          880    .text.svcRtxMessageQueueNew  rtx_msgqueue.o
+    0x10006064   0x0000015c   Code   RO          932    .text.svcRtxMessageQueuePut  rtx_msgqueue.o
+    0x100061c0   0x00000176   Code   RO          987    .text.svcRtxMutexAcquire  rtx_mutex.o
+    0x10006336   0x00000002   PAD
+    0x10006338   0x00000058   Code   RO          995    .text.svcRtxMutexDelete  rtx_mutex.o
+    0x10006390   0x00000142   Code   RO          981    .text.svcRtxMutexNew  rtx_mutex.o
+    0x100064d2   0x00000002   PAD
+    0x100064d4   0x000001a0   Code   RO          991    .text.svcRtxMutexRelease  rtx_mutex.o
+    0x10006674   0x00000084   Code   RO         1294    .text.svcRtxThreadExit  rtx_thread.o
+    0x100066f8   0x00000016   Code   RO         1186    .text.svcRtxThreadGetId  rtx_thread.o
+    0x1000670e   0x00000002   PAD
+    0x10006710   0x0000046a   Code   RO         1164    .text.svcRtxThreadNew  rtx_thread.o
+    0x10006b7a   0x00000002   PAD
+    0x10006b7c   0x00000050   Code   RO         1727    .text.uart_cmsdk_clear_interrupt  uart_cmsdk_drv.o
+    0x10006bcc   0x00000062   Code   RO         1701    .text.uart_cmsdk_init  uart_cmsdk_drv.o
+    0x10006c2e   0x00000002   PAD
+    0x10006c30   0x00000028   Code   RO         1705    .text.uart_cmsdk_irq_rx_disable  uart_cmsdk_drv.o
+    0x10006c58   0x00000034   Code   RO         1723    .text.uart_cmsdk_irq_rx_enable  uart_cmsdk_drv.o
+    0x10006c8c   0x00000028   Code   RO         1707    .text.uart_cmsdk_irq_tx_disable  uart_cmsdk_drv.o
+    0x10006cb4   0x00000034   Code   RO         1719    .text.uart_cmsdk_irq_tx_enable  uart_cmsdk_drv.o
+    0x10006ce8   0x00000034   Code   RO         1715    .text.uart_cmsdk_read  uart_cmsdk_drv.o
+    0x10006d1c   0x00000028   Code   RO         1735    .text.uart_cmsdk_rx_disable  uart_cmsdk_drv.o
+    0x10006d44   0x00000034   Code   RO         1733    .text.uart_cmsdk_rx_enable  uart_cmsdk_drv.o
+    0x10006d78   0x00000030   Code   RO         1725    .text.uart_cmsdk_rx_ready  uart_cmsdk_drv.o
+    0x10006da8   0x00000062   Code   RO         1709    .text.uart_cmsdk_set_baudrate  uart_cmsdk_drv.o
+    0x10006e0a   0x00000002   PAD
+    0x10006e0c   0x00000028   Code   RO         1731    .text.uart_cmsdk_tx_disable  uart_cmsdk_drv.o
+    0x10006e34   0x00000034   Code   RO         1729    .text.uart_cmsdk_tx_enable  uart_cmsdk_drv.o
+    0x10006e68   0x00000034   Code   RO         1717    .text.uart_cmsdk_write  uart_cmsdk_drv.o
+    0x10006e9c   0x00000048   Code   RO          750    .text.user_perthread_libspace_free  rtx_lib.o
+    0x10006ee4   0x00000012   Code   RO         1258    .text.xPSR_InitVal  rtx_thread.o
+    0x10006ef6   0x0000003e   Code   RO         2241    CL$$btod_d2e        c_wu.l(btod.o)
+    0x10006f34   0x00000046   Code   RO         2243    CL$$btod_d2e_denorm_low  c_wu.l(btod.o)
+    0x10006f7a   0x00000060   Code   RO         2242    CL$$btod_d2e_norm_op1  c_wu.l(btod.o)
+    0x10006fda   0x00000002   PAD
+    0x10006fdc   0x00000338   Code   RO         2251    CL$$btod_div_common  c_wu.l(btod.o)
+    0x10007314   0x000000dc   Code   RO         2248    CL$$btod_e2e        c_wu.l(btod.o)
+    0x100073f0   0x0000002a   Code   RO         2245    CL$$btod_ediv       c_wu.l(btod.o)
+    0x1000741a   0x0000002a   Code   RO         2244    CL$$btod_emul       c_wu.l(btod.o)
+    0x10007444   0x00000244   Code   RO         2250    CL$$btod_mult_common  c_wu.l(btod.o)
+    0x10007688   0x00000030   Code   RO         2359    i.__ARM_fpclassify  m_wv.l(fpclassify.o)
+    0x100076b8   0x0000000e   Code   RO         2064    i._is_digit         c_wu.l(__printf_wp.o)
+    0x100076c6   0x0000001c   Code   RO         2154    i.fputc             c_wu.l(fputc.o)
+    0x100076e2   0x00000002   PAD
+    0x100076e4   0x0000002c   Code   RO         2279    locale$$code        c_wu.l(lc_numeric_c.o)
+    0x10007710   0x0000002c   Code   RO         2412    locale$$code        c_wu.l(lc_ctype_c.o)
+    0x1000773c   0x0000001e   Code   RO         2004    x$fpl$fpinit        fz_wv.l(fpinit_81m.o)
+    0x1000775a   0x00000004   Code   RO         2105    x$fpl$printf1       fz_wv.l(printf1.o)
+    0x1000775e   0x00000004   Code   RO         2107    x$fpl$printf2       fz_wv.l(printf2.o)
+    0x10007762   0x00000000   Code   RO         2358    x$fpl$usenofp       fz_wv.l(usenofp.o)
+    0x10007762   0x00000002   PAD
+    0x10007764   0x00000008   Data   RO         2022    .constdata          c_wu.l(_printf_wctomb.o)
+    0x1000776c   0x00000028   Data   RO         2051    .constdata          c_wu.l(_printf_hex_int_ll_ptr.o)
+    0x10007794   0x00000011   Data   RO         2072    .constdata          c_wu.l(__printf_flags_ss_wp.o)
+    0x100077a5   0x00000026   Data   RO         2142    .constdata          c_wu.l(_printf_fp_hex.o)
+    0x100077cb   0x00000001   PAD
+    0x100077cc   0x00000094   Data   RO         2239    .constdata          c_wu.l(bigflt0.o)
+    0x10007860   0x00000070   Data   RO          764    .rodata             rtx_lib.o
+    0x100078d0   0x00000038   Data   RO          767    .rodata             rtx_lib.o
+    0x10007908   0x00000038   Data   RO          100    .rodata.Driver_USART0  Driver_USART.o
+    0x10007940   0x00000008   Data   RO         1403    .rodata.UART0_CMSDK_DEV_CFG_S  device_definition.o
+    0x10007948   0x00000008   Data   RO          126    .rodata.__stderr_name  retarget_io.o
+    0x10007950   0x00000007   Data   RO          124    .rodata.__stdin_name  retarget_io.o
+    0x10007957   0x00000008   Data   RO          125    .rodata.__stdout_name  retarget_io.o
+    0x1000795f   0x00000001   PAD
+    0x10007960   0x00000004   Data   RO          766    .rodata.osRtxUserSVC  rtx_lib.o
+    0x10007964   0x00000024   Data   RO          761    .rodata.os_idle_thread_attr  rtx_lib.o
+    0x10007988   0x00000018   Data   RO          763    .rodata.os_timer_mq_attr  rtx_lib.o
+    0x100079a0   0x00000024   Data   RO          762    .rodata.os_timer_thread_attr  rtx_lib.o
+    0x100079c4   0x00000013   Data   RO           17    .rodata.str1.1      hello.o
+    0x100079d7   0x00000017   Data   RO          127    .rodata.str1.1      retarget_io.o
+    0x100079ee   0x0000000b   Data   RO          731    .rodata.str1.1      rtx_kernel.o
+    0x100079f9   0x00000003   PAD
+    0x100079fc   0x00000020   Data   RO         2526    Region$$Table       anon$$obj.o
+    0x10007a1c   0x0000001c   Data   RO         2278    locale$$data        c_wu.l(lc_numeric_c.o)
+    0x10007a38   0x00000110   Data   RO         2411    locale$$data        c_wu.l(lc_ctype_c.o)
+
+
+    Execution Region RW_RAM3 (Base: 0x20000000, Size: 0x00000000, Max: 0x00020000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region RW_NOINIT (Base: 0x30000000, Size: 0x00000000, Max: 0x0001f200, ABSOLUTE, UNINIT)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region RW_RAM0 (Base: 0x30000000, Size: 0x000089c4, Max: 0x0001f200, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x30000000   0x00000004   Data   RW         2100    .data               c_wu.l(stdio_streams.o)
+    0x30000004   0x00000004   Data   RW         2101    .data               c_wu.l(stdio_streams.o)
+    0x30000008   0x00000004   Data   RW         2102    .data               c_wu.l(stdio_streams.o)
+    0x3000000c   0x00000004   Data   RW         2269    .data               c_wu.l(streamlock.o)
+    0x30000010   0x00000030   Data   RW           99    .data.Driver_USART0_DEV  Driver_USART.o
+    0x30000040   0x00000004   Data   RW         1983    .data.PeripheralClock  system_SSE300MPS3.o
+    0x30000044   0x00000004   Data   RW         1982    .data.SystemCoreClock  system_SSE300MPS3.o
+    0x30000048   0x00000008   Data   RW         1405    .data.UART0_CMSDK_DEV_S  device_definition.o
+    0x30000050   0x000000a4   Data   RW          732    .data.os            rtx_kernel.o
+    0x300000f4   0x00000004   PAD
+    0x300000f8   0x00000054   Zero   RW         2097    .bss                c_wu.l(stdio_streams.o)
+    0x3000014c   0x00000054   Zero   RW         2098    .bss                c_wu.l(stdio_streams.o)
+    0x300001a0   0x00000054   Zero   RW         2099    .bss                c_wu.l(stdio_streams.o)
+    0x300001f4   0x00000060   Zero   RW         2362    .bss                c_wu.l(libspace.o)
+    0x30000254   0x0000000c   Zero   RW         1404    .bss.UART0_CMSDK_DEV_DATA_S  device_definition.o
+    0x30000260   0x00000004   Zero   RW           18    .bss.count          hello.o
+    0x30000264   0x00000001   Zero   RW          153    .bss.os             os_systick.o
+    0x30000265   0x00000003   PAD
+    0x30000268   0x00008040   Zero   RW          760    .bss.os             rtx_lib.o
+    0x300082a8   0x000001f0   Zero   RW          768    .bss.os.libspace    rtx_lib.o
+    0x30008498   0x00000034   Zero   RW          772    .bss.os.msgqueue.cb  rtx_lib.o
+    0x300084cc   0x00000050   Zero   RW          773    .bss.os.msgqueue.mem  rtx_lib.o
+    0x3000851c   0x000000a0   Zero   RW          769    .bss.os.thread.cb   rtx_lib.o
+    0x300085bc   0x00000004   PAD
+    0x300085c0   0x00000200   Zero   RW          770    .bss.os.thread.idle.stack  rtx_lib.o
+    0x300087c0   0x00000200   Zero   RW          771    .bss.os.thread.timer.stack  rtx_lib.o
+    0x300089c0   0x00000001   Zero   RW          774    .bss.os_kernel_is_active.os_kernel_active  rtx_lib.o
+
+
+    Execution Region ARM_LIB_HEAP (Base: 0x300089c8, Size: 0x00000c00, Max: 0x00000c00, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x300089c8   0x00000c00   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACK (Base: 0x3001fe00, Size: 0x00000200, Max: 0x00000200, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x3001fe00   0x00000200   Zero   RW            2    ARM_LIB_STACK.bss   anon$$obj.o
+

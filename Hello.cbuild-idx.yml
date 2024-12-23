@@ -1,0 +1,16 @@
+build-idx:
+  generated-by: csolution version 2.6.0
+  description: Print Hello World and a counter value via UART
+  cdefault: cdefault.yml
+  csolution: Hello.csolution.yml
+  tmpdir: //isambard/UserShares/je/AVH-Hello/tmp
+  cprojects:
+    - cproject: Hello.cproject.yml
+  cbuilds:
+    - cbuild: Hello.Debug+CS300.cbuild.yml
+      project: Hello
+      configuration: .Debug+CS300
+      messages:
+        info:
+          - Hello.cbuild-pack.yml - file is already up-to-date
+          - Hello.Debug+CS300.cbuild.yml - file generated successfully
